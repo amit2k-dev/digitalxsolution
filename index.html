@@ -1,51 +1,418 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Maintenance Mode | Shankush Biological</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      margin:0;
-      height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:#0f172a;
-      font-family: Arial, sans-serif;
-      color:#fff;
-    }
-    .container{
-      text-align:center;
-    }
-    .loader{
-      width:80px;
-      height:80px;
-      border:8px solid rgba(255,255,255,0.2);
-      border-top:8px solid #38bdf8;
-      border-radius:50%;
-      animation:spin 1s linear infinite;
-      margin:0 auto 20px;
-    }
-    @keyframes spin{
-      to{transform:rotate(360deg);}
-    }
-    h1{
-      font-size:32px;
-      margin:10px 0;
-    }
-    p{
-      color:#cbd5f5;
-      font-size:16px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="loader"></div>
-    <h1>Maintenance Mode <h1>
-    <p>DigitalXSolution<br>
-       Please check back soon.</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Pro - Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">DigitalX <span>Soution</span></div>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-btns">
+          <a href="https://wa.me/7067406132" target="_blank" class="btn-primary">Get Free Consultation</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h3>We Grow Your Business</h3>
+          <h1>Transforming Businesses, Delivering <span>Real Impact</span></h1>
+          <p class="services-list">Social Media | Ads | SEO | Branding</p>
+          <p class="description">
+            We help brands scale through data-driven strategies and creative digital solutions that convert visitors into loyal customers.
+          </p>
+
+          <div class="cta-group">
+            <a href="https://wa.me/7067406132" class="btn-primary">Get Free Consultation</a>
+            <a href="#case_results" target="_blank" class="btn-secondary">▶ See Our Results</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="assets/images/herobannerimage.png"
+            alt="Happy Client"
+            class="main-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="services-header">
+          <div class="header-left">
+            <h2>Our <span>Premium Services</span></h2>
+            <p class="subtitle" style="color: #666; font-size: 14px;">
+              Strategic digital solutions designed to accelerate your business growth.
+            </p>
+
+            <ul class="features-list">
+              <li>
+                <span class="dot green"></span> High-Converting Campaigns
+              </li>
+              <li>
+                <span class="dot orange"></span> Maximum ROI
+              </li>
+              <li><span class="dot blue"></span> 24/7 Expert Support</li>
+              <li><span class="dot red"></span> Data-Driven Strategies</li>
+            </ul>
+
+            <div class="team-image-box">
+              <img
+                src="assets/images/servicestimage.png"
+                alt="Team Working"
+                class="team-img"
+              />
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <img
+                src="assets/images/instagram.svg"
+                alt="Instagram"
+                class="service-icon"
+              />
+              <h3>Social Media Management</h3>
+              <p>Grow your brand authority with engaging content and data-backed social strategies.</p>
+              <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+              <img
+                src="assets/images/facebook.svg"
+                alt="Facebook"
+                class="service-icon"
+              />
+              <h3>Meta Ads (FB & Insta)</h3>
+              <p>
+                Target high-intent audiences with high-converting ad campaigns that lower your CAC.
+              </p>
+              <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+              <img
+                src="assets/images/googlead.svg"
+                alt="Google Ads"
+                class="service-icon"
+              />
+              <h3>Google Ads (PPC):</h3>
+              <p>Get instant traffic and qualified leads through expert PPC and Search Engine Marketing.</p>
+              <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+              <img
+                src="assets/images/youtube.png"
+                alt="Reels"
+                class="service-icon"
+              />
+              <h3>Content & Reel Marketing</h3>
+              <p>Viral short-form video content tailored for modern brands to boost visibility.</p>
+              <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+              <img src="assets/images/seo.png" alt="SEO" class="service-icon" />
+              <h3>SEO Optimization</h3>
+              <p>Rank on the first page of Google to drive sustainable organic leads and traffic.</p>
+              <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+              <img
+                src="assets/images/brandingdesign.png"
+                alt="Branding"
+                class="service-icon"
+              />
+              <h3>Branding & Identity</h3>
+              <p>Building unique, memorable brand identities that resonate with your target audience. </p>
+              <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section  -->
+
+    <section id="about" class="about-container">
+      <div class="about-wrapper">
+        <div class="about-header">
+          <p class="section-tag">About Us</p>
+          <h2 class="section-title">
+            Your Trusted Partner in <span>Digital Marketing & Growth</span> 🚀
+          </h2>
+        </div>
+
+        <div class="about-flex">
+          <div class="about-image-side">
+            <img
+              src="assets/images/aboutimage.png"
+              alt="Team Work"
+              class="about-main-img"
+            />
+          </div>
+
+          <div class="about-text-side">
+            <p class="about-desc">
+              <span class="highlight">DigitalXSolution</span>  is a premier digital marketing agency based in India. Our expert team specializes in Social Media Management, Advanced SEO, Paid Advertising, and Strategic Branding. We are on a mission to empower businesses of all sizes to scale rapidly and achieve sustainable online success.
+            </p>
+
+            <ul class="about-check-list">
+              <li>
+                <span class="check-mark">L</span>
+                <p>
+                  <strong>Tailored Strategies:</strong> Data-driven marketing plans customized to align with your specific business goals and revenue targets.
+                </p>
+              </li>
+              <li>
+                <span class="check-mark">L</span>
+                <p>
+                  <strong> Performance Focused: </strong> Results-oriented approach designed to maximize online visibility, lead generation, and overall ROI.
+                </p>
+              </li>
+              <li>
+                <span class="check-mark">L</span>
+                <p><strong>Client-Centric Excellence:</strong> Unwavering commitment to client satisfaction through transparent communication and long-term growth partnerships.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+
+    <section class="why-choose-grid-section">
+        <div class="header-center">
+            <h2>Why choose  <span>DigitalXSolution</span> ?</h2>
+            <p>Our certified SEO professionals use proven strategies to improve Google rankings, organic traffic, and long-term brand visibility.</p>
+        </div>
+
+        <div class="cards-wrapper">
+            <div class="service-card">
+                <div class="icon-bg bg-light-blue">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Expert Team</h3>
+                <p>Skilled professionals in SEO, social media, ads, and web growth strategies.</p>
+                <!-- <a href="#" class="btn-learn">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+                <div class="icon-bg bg-light-orange">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Industry Experience</h3>
+                <p>Hands-on experience managing digital marketing campaigns across industries.</p>
+                <!-- <a href="#" class="btn-learn">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+                <div class="icon-bg bg-light-cyan">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Customized Strategies</h3>
+                <p>Data-driven marketing plans designed for your brand, audience, and goals.</p>
+                <!-- <a href="#" class="btn-learn">Learn More</a> -->
+            </div>
+
+            <div class="service-card">
+                <div class="icon-bg bg-light-purple">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h3>Affordable Packages</h3>
+                <p>Complete digital marketing solutions at pricing that fits your budget.</p>
+                <!-- <a href="#" class="btn-learn">Learn More</a> -->
+            </div>
+        </div>
+</section>
+
+    <!-- Contact Us  -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-main-wrapper">
+        <div class="contact-header-top">
+          <h2>Ready to <span>Grow</span> Your Business?</h2>
+          <p>Book Your <span>Free Consultation</span> Call Today!</p>
+        </div>
+
+        <div class="contact-content-grid">
+          <div class="glass-card info-side">
+            <h3>Let's Connect!</h3>
+            <p>
+              Talk to our experts and discover the right digital strategy for your business growth.
+            </p>
+
+            <div class="contact-links">
+              <p class="orange-text">📞 <span>+91 7067406132</span></p>
+              <p class="orange-text">✉ <span>digitalxsolutionss@gmail.com</span></p>
+              <p class="orange-text">
+                📍 <span>Indore LIG Nahru Nagar Madhaya Pradesh</span>
+              </p>
+            </div>
+            <div class="whatsapp-chat-card">
+              <div class="chat-header">
+                <img src="assets/images/whatsapp.svg" alt="WA" width="30" />
+              </div>
+              <div class="chat-body">
+                <div class="message-bubble">
+                  Hii there! 👋<br />
+                  Aapki business growth ke liye hamari team ready hai. Kya hum
+                  abhi baat kar sakte hain?
+                </div>
+              </div>
+              <a
+                href="https://wa.me/7067406132"
+                class="wa-action-btn"
+                target="_blank"
+              >
+                Start Conversation
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card form-side">
+            <img class="contact_image" src="assets/images/contactimage.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our case Syudy -->
+
+    <section class="results-section" id="case_results">
+        <div class="results-header">
+            <span class="sub-tag">OUR SUCCESS STORIES</span>
+            <h2>Driving Growth, <span> Delivering Real Results</span></h2>
+        </div>
+
+        <div class="results-grid">
+            <div class="result-card card-blue">
+                <p class="card-tag">E-Commerce Growth</p>
+                <div class="result-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3 class="stat-number">3X<span>Sales Increase  </span></h3>
+                <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+                <p class="stat-desc">Revenue growth achieved within 6 months through performance marketing and optimization.</p>
+            </div>
+
+            <div class="result-card card-red">
+                <p class="card-tag">Website Traffic Growth</p>
+                <div class="result-icon">
+                    <i class="fas fa-arrow-trend-up"></i>
+                </div>
+                <h3 class="stat-number">4X <span>Organic Traffic</span></h3>
+                <div class="progress-bar"><div class="fill" style="width: 70%;"></div></div>
+                <p class="stat-desc">Improved search visibility and consistent traffic through SEO and content strategy.</p>
+            </div>
+
+            <div class="result-card card-cyan">
+                <p class="card-tag">Brand Awareness</p>
+                <div class="result-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="stat-number">85% <span>Higher Engagement</span></h3>
+                <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+                <p class="stat-desc">Stronger social presence with increased reach, followers, and customer interaction.</p>
+            </div>
+        </div>
+<!-- 
+        <div class="results-footer">
+            <a href="#" class="btn-view-all">VIEW ALL CASE STUDIES <i class="fas fa-chevron-right"></i></a>
+        </div> -->
+</section>
+
+    <!-- Footer -->
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col logo-col">
+          <h2 class="footer-logo">DigitalX<span style="color: #ff7a50;">Solution</span></h2>
+          <p>
+            Empowering brands with cutting-edge digital marketing strategies to
+            drive growth and success.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>+91 7067406132</li>
+            <li>digitalxsolutionss@gmail.com</li>
+            <li>Indore LIG Nahru Nagar Madhaya Pradesh</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>SEO Optimization</li>
+            <li>Social Media</li>
+            <li>Paid Ads</li>
+            <li>Branding</li>
+          </ul>
+        </div>
+      </div>
+<!-- 
+      <div class="footer-bottom">
+        <div class="bottom-content">
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms of Service</a>
+          </div>
+          <p>&copy; 2026 DigitizePro. All rights reserved.</p>
+        </div>
+      </div> -->
+
+      <!-- Footer Menu Bar -->
+
+      <div class="app-bottom-nav">
+        <a href="#" class="nav-item active">
+          <i data-lucide="home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#about" class="nav-item">
+          <i data-lucide="user"></i>
+          <span>About</span>
+        </a>
+        <a href="#services" class="nav-item">
+          <i data-lucide="layers"></i>
+          <span>Services</span>
+        </a>
+        <a href="#contact" class="nav-item">
+          <i data-lucide="phone"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
