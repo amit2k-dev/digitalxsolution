@@ -1,0 +1,1051 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(135deg, #fff5f0 0%, #ffe4d6 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased; /* Font ko smooth dikhane ke liye */
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Headings ko thoda bold aur professional touch dene ke liye */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Extra Bold for titles */
+  letter-spacing: -0.5px; /* Image jaisa compact look */
+}
+
+/* Paragraph aur labels ke liye weight */
+p,
+span,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Buttons par thoda medium weight achha lagta hai */
+.submit-btn,
+.whatsapp-button,
+.cta-submit {
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 80px 5%;
+}
+
+/* --- Navigation --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.logo span {
+  color: #ff7a50;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: -5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+.nav-links a.active {
+  color: #ff7a50;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #ff8a65, #ff5e3a);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 94, 58, 0.3);
+}
+/* Desktop par hide rahega */
+.app-bottom-nav {
+  display: none;
+}
+/* --- Hero Section --- */
+.hero {
+  padding: 50px 8%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  line-height: 1.1;
+}
+.hero-content h1 span {
+  color: #ff7a50;
+}
+
+.services-list {
+  margin: 20px 0;
+  font-weight: 600;
+  color: #444;
+}
+
+.description {
+  max-width: 450px;
+  color: #777;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.trusted-by {
+  margin-top: 50px;
+  color: #888;
+}
+.trusted-by span {
+  color: #ff7a50;
+  font-weight: 600;
+}
+
+/* --- Hero Image & Floating Elements --- */
+.hero-image {
+  flex: 1;
+  position: relative;
+  text-align: right;
+}
+
+.main-img {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  max-width: 80%;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px;
+}
+
+/* Background Blob Effect */
+
+.badge {
+  position: absolute;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  z-index: 3;
+}
+
+.happy-clients {
+  top: 20%;
+  right: 0;
+}
+
+.floating-icons {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  z-index: 3;
+}
+
+/* ---- Our Services Css ----*/
+
+.services-section {
+  /*    background-color: #fff5f0;*/
+  background-image: url("../images/sectionbgimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.services-header {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-left h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.header-left h2 span {
+  color: #ff7a50;
+}
+
+.features-list {
+  list-style: none;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.features-list li {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.green {
+  background: #4caf50;
+}
+.orange {
+  background: #ff9800;
+}
+.blue {
+  background: #2196f3;
+}
+.red {
+  background: #f44336;
+}
+
+.team-image-box {
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+  width: 100%;
+  display: block;
+}
+
+/* Services Grid */
+.services-grid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 122, 80, 0.15);
+}
+
+.service-icon {
+  width: 60px; /* Icon ka size manage karne ke liye */
+  height: 60px;
+  object-fit: contain; /* Isse icon stretch nahi hoga */
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* Soft shadow jaisi image mein hai */
+  text-align: center;
+  border: 1px solid #f0f0f0;
+}
+.service-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* About Section Base */
+
+.about-container {
+  background: linear-gradient(135deg, #fff5f0 0%, #ffe4d6 100%);
+  /*    background-color: #fffaf8;*/
+}
+
+.about-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-tag {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.section-title span {
+  color: #ff7a50; /* Theme Orange */
+}
+
+/* Flex Layout */
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image-side,
+.about-text-side {
+  flex: 1;
+}
+
+.about-main-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #ff7a50;
+  font-weight: bold;
+}
+
+/* Check List Styling */
+.about-check-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-check-list li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.check-mark {
+  color: #ff7a50;
+  font-weight: bold;
+  transform: rotate(45deg) scaleX(-1); /* Checkmark shape using letter L */
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/* Why Choose Us Styling */
+
+.why-choose-grid-section {
+    background-color: #FFF5F2; /* Same as your theme */
+    text-align: center;
+}
+
+.header-center {
+    margin-bottom: 50px;
+}
+
+.header-center .sub-tag {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header-center h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.header-center h2 span {
+    color: #FF6B4A; /* Orange color from your logo */
+}
+
+/* Grid for 4 cards */
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 35px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Icon Styles */
+.icon-bg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 24px;
+}
+
+.bg-light-blue { background: #E3F2FD; color: #2196F3; }
+.bg-light-orange { background: #FFF3E0; color: #FF9800; }
+.bg-light-cyan { background: #E0F7FA; color: #00BCD4; }
+.bg-light-purple { background: #EDE7F6; color: #673AB7; }
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-learn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-learn:hover {
+    background: #FF6B4A;
+    color: #fff;
+}
+
+
+/* Contact Us */
+
+.contact-section {
+  /*    background-color: #fff5f0;*/
+  background-image: url("../images/sectionbgimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.contact-links{
+  padding-top: 15px;
+}
+.contact-main-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.whatsapp-chat-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(255, 122, 80, 0.1);
+  border: 1px solid #f0f0f0;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.chat-header {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #25d366;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  box-shadow: 0 0 5px #25d366;
+}
+
+.chat-body {
+  padding: 20px;
+  background-image: url("../images/whatsappbgimg.png"); /* WhatsApp Background Pattern */
+  background-size: contain;
+}
+
+.message-bubble {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 0 15px 15px 15px;
+  font-size: 0.9rem;
+  color: #444;
+  max-width: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  line-height: 1.4;
+}
+
+.wa-action-btn {
+  display: block;
+  background: #25d366; /* Pure WhatsApp Green */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.wa-action-btn:hover {
+  background: #1eb954;
+}
+/* Header Styling - Title on Top */
+.contact-header-top {
+  margin-bottom: 50px;
+}
+
+.contact-header-top h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-header-top h2 span,
+.contact-header-top p span {
+  color: #ff7a50; /* Orange highlight */
+}
+
+/* Grid Layout for Cards */
+.contact-content-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Glassy Card Style as per Image */
+.glass-card {
+  background: #fffaf8;
+  padding: 40px;
+  border-radius: 30px;
+  flex: 1;
+  text-align: left;
+  box-shadow: 0 15px 40px rgba(255, 122, 80, 0.05); /* Very light orange shadow */
+  border: 1px solid #f0f0f0;
+}
+
+.glass-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-links p {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.orange-text {
+  color: #ff7a50;
+}
+
+.orange-text span {
+  color: #555;
+  margin-left: 10px;
+}
+
+.map-container {
+  margin-top: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Form Styling */
+.contact_image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Our Case Study */
+
+/* Results Section Styling */
+.results-section {
+    background-color:linear-gradient(135deg, #fff5f0 0%, #ffe4d6 100%);
+    text-align: center;
+}
+
+.results-header {
+    margin-bottom: 50px;
+}
+
+.results-header .sub-tag {
+    font-size: 13px;
+    color:#666;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.results-header h2 {
+    font-size: 34px;
+    color: #222;
+    margin-top: 10px;
+}
+
+.results-header h2 span {
+    color: #FF6B4A; /* Brand Orange-Red */
+}
+
+/* Grid Layout */
+.results-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Individual Result Cards */
+.result-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.result-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card-tag {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Icon Styles */
+.result-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card-blue .result-icon { color: #2196F3; }
+.card-red .result-icon { color: #FF5252; }
+.card-cyan .result-icon { color: #00BCD4; }
+
+/* Stats Text */
+.stat-number {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.stat-number span {
+    font-size: 14px;
+    display: block;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Progress Bar Style */
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress-bar .fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-blue .fill { background: #2196F3; }
+.card-red .fill { background: #FF5252; }
+.card-cyan .fill { background: #00BCD4; }
+
+.stat-desc {
+    font-size: 12px;
+    color: #888;
+}
+
+/* View All Button */
+/* .btn-view-all {
+    display: inline-block;
+    background: linear-gradient(to right, #FF6B4A, #FF4D24);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 10px 20px rgba(255, 107, 74, 0.3);
+} */
+
+
+/*Footer */
+
+/* Footer Base Styling */
+.main-footer {
+  background: url("../images/sectionbgimage.png");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  font-family: "Poppins", sans-serif;
+  border-top: 1px solid #f0f0f0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  padding: 0 5% 40px;
+}
+
+.footer-col h4 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+  color: #ff7a50; /* Orange Hover */
+}
+
+/* Bottom Bar Styling */
+.footer-bottom {
+  background: #fde6d9;
+  padding: 20px 5%;
+  border-top: 1px solid #f0f0f0;
+}
+
+.bottom-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: #888;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.legal-links a:hover {
+  color: #ff7a50;
+}
+
+/* --- Mobile Responsive Code --- */
+
+@media (max-width: 1024px) {
+  /* Navigation adjust karein */
+  nav {
+    flex-direction: column;
+    padding: 15px;
+    gap: 25px;
+  }
+  .nav-links {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .nav-btns {
+    display: none;
+  }
+
+  /* Hero Section ko stack karein */
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .hero-content {
+    order: 1; /* Text upar rahega */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Heading thodi choti karein */
+  }
+
+  .hero-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    margin: 20px auto; /* Text center align karne ke liye */
+  }
+
+  .cta-group {
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Image Section adjust karein */
+  .hero-image {
+    order: 2; /* Image niche aayegi */
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .main-img {
+    width: 100%;
+    max-width: max-content; /* Choti screen pe image control mein rahe */
+    border-radius: 20px;
+  }
+
+  /* Floating badges mobile pe hide ya adjust karein */
+  .happy-clients {
+    top: 0;
+    right: 10px;
+    transform: scale(0.8);
+  }
+
+  .floating-icons {
+    bottom: 5%;
+    left: 5%;
+    transform: scale(0.8);
+  }
+
+  /*    Our Services */
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 5%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    padding: 25px 8% 50px 8%;
+  }
+  .app-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Modern Glassmorphism effect */
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    padding-bottom: env(safe-area-inset-bottom); /* iPhone notch support */
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 11px;
+    transition: 0.3s;
+  }
+
+  /* Icon size control */
+  .nav-item i {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 4px;
+  }
+
+  /* Active state color */
+  .nav-item.active {
+    color: #ff7a50; /* Theme orange color */
+  }
+
+  /* Hero section ka margin badhayein taaki bottom nav content ko na chhupaye */
+  body {
+    padding-bottom: 70px;
+  }
+
+  /* ------   Our Services -----  */
+
+  .services-header {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Mobile par single column */
+    width: 100%;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+
+  /*    About Section*/
+
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-check-list li {
+    text-align: left;
+  }
+
+  /*    Contact Us */
+
+  .contact-content-grid {
+    flex-direction: column;
+  }
+  .contact-header-top h2 {
+    font-size: 2rem;
+  }
+  .glass-card.form-side {
+    display: none;
+  }
+  .results-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-wrapper {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  /*    Footer*/
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bottom-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .logo-col {
+    grid-column: span 2;
+  }
+}
